@@ -1,0 +1,9 @@
+.container
+  table.table.table-striped
+    - @quotes.each do |quote|
+      tr
+        td
+          = quote.quote
+        td 
+          = quote.authoer
+  = paginate @quotes
